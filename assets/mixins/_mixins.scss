@@ -1,0 +1,9 @@
+@mixin  flex-center {
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin background {
+    background-repeat: no-repeat;
+    background-size: cover;
+}

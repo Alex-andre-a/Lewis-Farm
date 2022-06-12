@@ -1,19 +1,29 @@
-* {
-  padding: 0;
-  margin: 0;
-  font-family: "Oswald", sans-serif;
-}
+@import "./assets/mixins/mixins";
 
 /* ======================= GLOBAL ======================= */
 
 body {
   background-color: white;
+  font-family: "Roboto", sans-serif;
 }
 
 a,
-p {
+p,
+h1,
+h2,
+h3 {
+  letter-spacing: 1px;
   color: rgb(4, 93, 4);
 }
+
+h2 {
+  font-size: 200%;
+}
+
+// .row{
+//   padding: 0;
+//   margin: 0;
+// }
 
 /* ======================= NAVBAR ======================= */
 
@@ -22,8 +32,7 @@ nav {
   height: 150px;
   width: 100%;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  @include flex-center;
   gap: 35px;
 
   img {
@@ -34,7 +43,8 @@ nav {
 
   a {
     text-decoration: none;
-    font-size: 125%;
+    font-size: 115%;
+    font-weight: 300;
 
     &:hover {
       color: black;
@@ -45,12 +55,50 @@ nav {
 /* ======================= SECTION 1 ======================= */
 
 .section1 {
-  background-image: url(/assets/images/section1/84770f_1709ef8680b046ca97ee6ceeae28abe6_mv2_d_5615_3747_s_4_2.webp);
-  background-repeat: no-repeat;
+  background: linear-gradient(
+      90deg,
+      rgba(2, 0, 36, 0.2) 0%,
+      rgba(36, 121, 9, 0.15) 35%,
+      rgba(92, 135, 1, 0.15) 100%
+    ),
+    url(/assets/images/section1/84770f_1709ef8680b046ca97ee6ceeae28abe6_mv2_d_5615_3747_s_4_2.webp)
+      no-repeat;
   background-size: cover;
   height: 900px;
   display: flex;
   flex-flow: column;
-  justify-content: center;
-  align-items: center;
+  @include flex-center;
+  gap: 50px;
+
+  h1,
+  h2,
+  h3 {
+    color: white;
+  }
+
+  h1 {
+    font-size: 800%;
+    font-weight: 400;
+  }
+
+  h3 {
+    font-size: 200%;
+    font-weight: 300;
+  }
+}
+
+.separation {
+  height: 3px;
+  width: 60%;
+  margin: 0 auto;
+  background-color: white;
+  content: "";
+}
+
+/* ======================= SECTION 2 ======================= */
+
+.section2-left {
+  background-image: url(/assets/images/section2/left/45d10e_051e0a16fe6142e8af623046a6338998_mv2_d_3926_4826_s_4_2.webp);
+    height: 800px;
+    @include background;
 }
