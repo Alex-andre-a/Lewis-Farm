@@ -1,0 +1,56 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Oswald", sans-serif;
+}
+
+/* ======================= GLOBAL ======================= */
+
+body {
+  background-color: white;
+}
+
+a,
+p {
+  color: rgb(4, 93, 4);
+}
+
+/* ======================= NAVBAR ======================= */
+
+nav {
+  position: relative;
+  height: 150px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 35px;
+
+  img {
+    position: absolute;
+    top: 10px;
+    left: 35px;
+  }
+
+  a {
+    text-decoration: none;
+    font-size: 125%;
+
+    &:hover {
+      color: black;
+    }
+  }
+}
+
+/* ======================= SECTION 1 ======================= */
+
+.section1 {
+  background-image: url(/assets/images/section1/84770f_1709ef8680b046ca97ee6ceeae28abe6_mv2_d_5615_3747_s_4_2.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 900px;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
