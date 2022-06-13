@@ -14,7 +14,7 @@ h1,
 h2,
 h3 {
   letter-spacing: 1px;
-  color: rgb(4, 93, 4);
+  color: $colorprim;
 }
 
 h1 {
@@ -40,6 +40,7 @@ h3 {
 
 nav .row {
   align-items: center;
+  @include no-spaces;
 }
 
 .logo-nav img {
@@ -58,6 +59,10 @@ nav .row {
 }
 
 /* ======================= SECTION 1 ======================= */
+
+.section1 .row{
+  @include no-spaces;
+}
 
 .section1-photo {
   background: linear-gradient(
@@ -93,17 +98,66 @@ nav .row {
     content: "";
   }
 }
+
 /* ======================= SECTION 2 ======================= */
 
 .section2 {
-  border: 1px solid red;
-  padding: 30px 80px;
+  margin: 30px 150px;
 }
 
 .section2-photo {
-  display: block;
-  height: 90vh;
+  height: 100vh;
   display: flex;
-  @include flex-center
+  @include flex-center;
+  @include background;
 }
 
+.section2-titres {
+  text-align: center;
+  padding: 60px 20px;
+  background-color: white;
+
+  a {
+    text-decoration: none;
+    padding: 2px 10px;
+    border-bottom: 1px solid $colorprim;
+
+    &:hover {
+      color: $hoverprim;
+    }
+  }
+}
+
+.section2-middle {
+  position: relative;
+  display: flex;
+  flex-flow: column;
+  @include flex-center;
+  width: 50%;
+  text-align: center;
+  gap: 50px;
+
+  .btn {
+    background-color: $colorprim;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 0;
+    transition: all 1s;
+
+    &:hover {
+      color: $hoverprim;
+      background-color: white;
+    }
+  }
+
+  .section2-logo-middle {
+    position: absolute;
+    right: -50px;
+    top: -110px;
+  }
+
+  p {
+    letter-spacing: 0;
+    line-height: 150%;
+  }
+}
