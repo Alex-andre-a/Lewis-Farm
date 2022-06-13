@@ -12,7 +12,8 @@ a,
 p,
 h1,
 h2,
-h3 {
+h3,
+h6 {
   letter-spacing: 1px;
   color: $colorprim;
 }
@@ -29,6 +30,10 @@ h2 {
 h3 {
   font-size: 200%;
   font-weight: 300;
+}
+
+p{
+  font-size: 110%;
 }
 
 .row > * {
@@ -60,7 +65,7 @@ nav .row {
 
 /* ======================= SECTION 1 ======================= */
 
-.section1 .row{
+.section1 .row {
   @include no-spaces;
 }
 
@@ -106,7 +111,7 @@ nav .row {
 }
 
 .section2-photo {
-  height: 100vh;
+  height: 90vh;
   display: flex;
   @include flex-center;
   @include background;
@@ -158,6 +163,33 @@ nav .row {
 
   p {
     letter-spacing: 0;
-    line-height: 150%;
+    line-height: 180%;
+  }
+}
+
+/* ======================= SECTION 3 ======================= */
+
+.section3 {
+  margin: 30px 150px;
+  text-align: center;
+}
+
+.section3-content{
+  display: flex;
+  flex-flow: column;
+  @include flex-center;
+  gap: 30px;
+  padding-top: 200px;
+  padding-bottom: 20px;
+
+  p{
+    width: 50%;
+  }
+
+  .separation2{
+    margin: 40px 0;
+    word-spacing: 20px;
+    font-size: 150%;
+    color: $colorprim;
   }
 }

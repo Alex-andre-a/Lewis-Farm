@@ -8,7 +8,8 @@ a,
 p,
 h1,
 h2,
-h3 {
+h3,
+h6 {
   letter-spacing: 1px;
   color: #045d04;
 }
@@ -25,6 +26,10 @@ h2 {
 h3 {
   font-size: 200%;
   font-weight: 300;
+}
+
+p {
+  font-size: 110%;
 }
 
 .row > * {
@@ -110,7 +115,7 @@ nav .row {
 }
 
 .section2-photo {
-  height: 100vh;
+  height: 90vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -182,6 +187,42 @@ nav .row {
 
 .section2-middle p {
   letter-spacing: 0;
-  line-height: 150%;
+  line-height: 180%;
+}
+
+/* ======================= SECTION 3 ======================= */
+.section3 {
+  margin: 30px 150px;
+  text-align: center;
+}
+
+.section3-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 30px;
+  padding-top: 200px;
+  padding-bottom: 20px;
+}
+
+.section3-content p {
+  width: 50%;
+}
+
+.section3-content .separation2 {
+  margin: 40px 0;
+  word-spacing: 20px;
+  font-size: 150%;
+  color: #045d04;
 }
 /*# sourceMappingURL=style.css.map */
