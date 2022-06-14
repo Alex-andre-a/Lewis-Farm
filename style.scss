@@ -145,16 +145,7 @@ nav .row {
   gap: 50px;
 
   .btn {
-    background-color: $colorprim;
-    color: white;
-    padding: 15px 20px;
-    border-radius: 0;
-    transition: all 1s;
-
-    &:hover {
-      color: $hoverprim;
-      background-color: white;
-    }
+    @include green-button;
   }
 
   .section1-1-logo-middle {
@@ -236,6 +227,8 @@ footer {
 ========================================= ABOUT TTHE FARM =========================================
 ================================================================================================ */
 
+/* ======================= SECTION 2-0 ======================= */
+
 .section2-0 {
   margin: 55px;
 
@@ -253,7 +246,60 @@ footer {
     width: 70%;
   }
 
-  img{
+  img {
     width: 100%;
   }
 }
+
+/* ======================= SECTION 2-1 ======================= */
+
+.section2-1-content {
+  display: flex;
+  flex-flow: column;
+  @include flex-center;
+  gap: 30px;
+  text-align: center;
+
+  h2 {
+    margin-bottom: 40px;
+  }
+
+  a {
+    margin-top: 40px;
+  }
+
+  p {
+    line-height: 180%;
+  }
+
+  .btn {
+    @include white-button;
+  }
+}
+
+/* ======================= SECTION 2-2 ======================= */
+
+.section2-2 {
+  margin: 80px 55px;
+
+  .section2-2-content {
+    @include no-spaces;
+    display: flex;
+    flex-flow: column;
+    @include flex-center;
+    text-align: center;
+    gap: 25px;
+  }
+
+  p,
+  h2 {
+    margin-top: 50px;
+    width: 70%;
+    line-height: 180%;
+  }
+
+  img {
+    width: 100%;
+  }
+}
+

@@ -1,14 +1,41 @@
-@mixin  flex-center {
-    justify-content: center;
-    align-items: center;
+@mixin flex-center {
+  justify-content: center;
+  align-items: center;
 }
 
 @mixin background {
-    background-repeat: no-repeat;
-    background-size: cover;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 @mixin no-spaces {
-    padding: 0;
-    margin: 0;
+  padding: 0;
+  margin: 0;
+}
+
+@mixin green-button {
+  background-color: $colorprim;
+  color: white;
+  padding: 15px 30px;
+  border-radius: 0;
+  transition: all 1s;
+
+  &:hover {
+    color: $hoverprim;
+    background-color: white;
+  }
+}
+
+@mixin white-button {
+  background-color: white;
+  border: 2px solid $colorprim;
+  color: $colorprim;
+  padding: 15px 40px;
+  border-radius: 0;
+  transition: all 1s;
+
+  &:hover {
+    color: white;
+    background-color: $colorprim;
+  }
 }
