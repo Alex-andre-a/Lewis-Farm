@@ -1,5 +1,6 @@
 @import "./assets/mixins/mixins";
 @import "./assets/variables/variables";
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css");
 
 /* ======================= GLOBAL ======================= */
 
@@ -13,6 +14,7 @@ p,
 h1,
 h2,
 h3,
+h4,
 h6 {
   letter-spacing: 1px;
   color: $colorprim;
@@ -32,24 +34,26 @@ h3 {
   font-weight: 300;
 }
 
-p{
-  font-size: 110%;
+h4 {
+  font-size: 180%;
 }
 
-.row > * {
-  padding: 0;
-  margin: 0;
+h6 {
+  font-size: 80%;
+}
+
+p {
+  font-size: 110%;
 }
 
 /* ======================= NAVBAR ======================= */
 
 nav .row {
   align-items: center;
-  @include no-spaces;
 }
 
 .logo-nav img {
-  margin: 10px 0 30px 25px;
+  margin: 10px 0 30px 35px;
 }
 
 .menus-nav a {
@@ -64,10 +68,6 @@ nav .row {
 }
 
 /* ======================= SECTION 1 ======================= */
-
-.section1 .row {
-  @include no-spaces;
-}
 
 .section1-photo {
   background: linear-gradient(
@@ -107,7 +107,11 @@ nav .row {
 /* ======================= SECTION 2 ======================= */
 
 .section2 {
-  margin: 30px 150px;
+  margin: 30px 100px;
+
+  .section2-content {
+    @include no-spaces;
+  }
 }
 
 .section2-photo {
@@ -174,7 +178,7 @@ nav .row {
   text-align: center;
 }
 
-.section3-content{
+.section3-content {
   display: flex;
   flex-flow: column;
   @include flex-center;
@@ -182,14 +186,49 @@ nav .row {
   padding-top: 200px;
   padding-bottom: 20px;
 
-  p{
+  p {
     width: 50%;
   }
 
-  .separation2{
+  .separation2 {
     margin: 40px 0;
     word-spacing: 20px;
     font-size: 150%;
     color: $colorprim;
+  }
+}
+
+/* ======================= SECTION 4 ======================= */
+
+.section4,
+footer {
+  padding: 20px;
+}
+
+.section4-photos,
+.footer-content {
+  padding: 35px;
+
+  img {
+    width: 100%;
+  }
+}
+
+/* ======================= FOOTER ======================= */
+
+.footer-content {
+  padding: 100px 100px 0 100px;
+
+  h4, .social {
+    margin-bottom: 40px;
+  }
+}
+
+.social a{
+  color: black;
+  padding-right: 15px;
+
+  &:hover{
+    color:$colorprim;
   }
 }
