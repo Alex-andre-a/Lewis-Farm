@@ -346,3 +346,53 @@ footer {
   padding: 5px 8px;
   color: white;
 }
+
+/* ====================================================================================
+========================================= FAQ =========================================
+==================================================================================== */
+
+/* ======================= SECTION 4-0 ======================= */
+
+.section4-0 {
+  margin: 100px 55px;
+
+  .row > * {
+    padding: 0;
+  }
+}
+
+.section4-0-content {
+  height: 100%;
+  background-color: $colorprim;
+  display: flex;
+  flex-flow: column;
+  @include flex-center;
+  gap: 20px;
+
+  h2,
+  h4 {
+    color: white;
+  }
+
+  select {
+    width: 50%;
+    padding: 5px 0;
+    border: 0;
+    background-color: $colorprim;
+    color: white;
+  }
+
+  .separation3 {
+    height: 1px;
+    width: 50%;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.4);
+    content: "";
+  }
+}
+
+.section4-0-photo img {
+  @include background;
+  width: 100%;
+}
+

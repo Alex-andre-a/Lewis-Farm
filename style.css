@@ -427,4 +427,62 @@ footer {
   padding: 5px 8px;
   color: white;
 }
+
+/* ====================================================================================
+========================================= FAQ =========================================
+==================================================================================== */
+/* ======================= SECTION 4-0 ======================= */
+.section4-0 {
+  margin: 100px 55px;
+}
+
+.section4-0 .row > * {
+  padding: 0;
+}
+
+.section4-0-content {
+  height: 100%;
+  background-color: #045d04;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 20px;
+}
+
+.section4-0-content h2,
+.section4-0-content h4 {
+  color: white;
+}
+
+.section4-0-content select {
+  width: 50%;
+  padding: 5px 0;
+  border: 0;
+  background-color: #045d04;
+  color: white;
+}
+
+.section4-0-content .separation3 {
+  height: 1px;
+  width: 50%;
+  margin: 0 auto;
+  background-color: rgba(255, 255, 255, 0.4);
+  content: "";
+}
+
+.section4-0-photo img {
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+}
 /*# sourceMappingURL=style.css.map */
