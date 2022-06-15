@@ -72,7 +72,7 @@ nav .row {
   font-size: 110%;
 
   &:hover {
-    color: $hoverprim;
+    color: $colorsec;
   }
 }
 
@@ -117,7 +117,7 @@ nav .row {
 }
 
 .section1-1-photo {
-  background-color: $colorbackground;
+  background-color: $colorsec;
   height: 90vh;
   display: flex;
   @include flex-center;
@@ -135,7 +135,7 @@ nav .row {
     border-bottom: 1px solid $colorprim;
 
     &:hover {
-      color: $hoverprim;
+      color: $colorsec;
     }
   }
 }
@@ -238,6 +238,7 @@ footer {
   margin: 55px;
 
   .section2-0-content {
+    background: $colorsec;
     @include no-spaces;
     display: flex;
     flex-flow: column;
@@ -354,45 +355,44 @@ footer {
 /* ======================= SECTION 4-0 ======================= */
 
 .section4-0 {
-  margin: 100px 55px;
-
-  .row > * {
-    padding: 0;
-  }
+  margin: 55px;
 }
 
 .section4-0-content {
-  height: 100%;
-  background-color: $colorprim;
+  background: $colorprim;
+  @include no-spaces;
   display: flex;
   flex-flow: column;
   @include flex-center;
-  gap: 20px;
+  gap: 30px;
 
   h2,
   h4 {
     color: white;
   }
 
+  img {
+    width: 100%;
+  }
+
   select {
-    width: 50%;
+    width: 45%;
     padding: 5px 0;
     border: 0;
-    background-color: $colorprim;
+    background: none;
     color: white;
+
+    option {
+      color: black;
+    }
   }
 
   .separation3 {
     height: 1px;
-    width: 50%;
+    width: 45%;
     margin: 0 auto;
     background-color: rgba(255, 255, 255, 0.4);
     content: "";
   }
-}
-
-.section4-0-photo img {
-  @include background;
-  width: 100%;
 }
 
