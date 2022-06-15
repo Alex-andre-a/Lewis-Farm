@@ -11,6 +11,7 @@ h1,
 h2,
 h3,
 h4,
+h5,
 h6 {
   letter-spacing: 1px;
   color: #045d04;
@@ -32,6 +33,10 @@ h3 {
 
 h4 {
   font-size: 180%;
+}
+
+h5 {
+  font-weight: 300;
 }
 
 h6 {
@@ -384,5 +389,42 @@ footer {
 
 .section2-2 img {
   width: 100%;
+}
+
+/* ==============================================================================================
+========================================= SHOP PRODUCTS =========================================
+============================================================================================== */
+/* ======================= SECTION 3-0 ======================= */
+.section3-0 .row {
+  margin-bottom: 80px;
+}
+
+.section3-0 .row .row > * {
+  padding: 0 30px;
+}
+
+.section3-0-titre {
+  text-align: center;
+  margin: 80px 0;
+}
+
+.section3-0-titre h5 {
+  margin: 30px 0;
+}
+
+.section3-0-content {
+  text-align: center;
+}
+
+.section3-0-content img {
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.section3-0-weight {
+  position: absolute;
+  background-color: green;
+  padding: 5px 8px;
+  color: white;
 }
 /*# sourceMappingURL=style.css.map */
