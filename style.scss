@@ -384,7 +384,7 @@ footer {
   .accordion-item {
     margin: 20px 0;
     border: 0;
-    border-bottom: 2px solid rgba(255, 255, 255, 0.40);
+    border-bottom: 2px solid rgba(255, 255, 255, 0.4);
     border-radius: 0;
     background: $colorprim;
 
@@ -402,5 +402,48 @@ footer {
     .accordion-body {
       background-color: white;
     }
+  }
+}
+
+/* ==========================================================================================
+========================================= SAY HELLO =========================================
+========================================================================================== */
+
+/* ======================= SECTION 5-0 ======================= */
+
+.section5-0 {
+  margin: 55px;
+
+  .section5-0-content {
+    background: $colorsec;
+    @include no-spaces;
+    display: flex;
+    flex-flow: column;
+    @include flex-center;
+    text-align: center;
+    gap: 25px;
+  }
+
+  img {
+    width: 100%;
+  }
+}
+
+.section5-0-formulaire{
+
+  display: flex;
+  flex-flow: column;
+  @include flex-center;
+
+  .section5-0-phone{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .separation3{
+    height: 50px;
+    width: 3px;
+    background: $colorprim;
   }
 }

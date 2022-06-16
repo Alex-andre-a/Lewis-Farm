@@ -493,4 +493,69 @@ footer {
 .accordion .accordion-item .accordion-body {
   background-color: white;
 }
+
+/* ==========================================================================================
+========================================= SAY HELLO =========================================
+========================================================================================== */
+/* ======================= SECTION 5-0 ======================= */
+.section5-0 {
+  margin: 55px;
+}
+
+.section5-0 .section5-0-content {
+  background: #ffb84e;
+  padding: 0;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  gap: 25px;
+}
+
+.section5-0 img {
+  width: 100%;
+}
+
+.section5-0-formulaire {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.section5-0-formulaire .section5-0-phone {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 30px;
+}
+
+.section5-0-formulaire .separation3 {
+  height: 50px;
+  width: 3px;
+  background: #325b5b;
+}
 /*# sourceMappingURL=style.css.map */
