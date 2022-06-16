@@ -437,6 +437,10 @@ footer {
   margin: 55px;
 }
 
+.accordion {
+  width: 50%;
+}
+
 .section4-0-content {
   background: #325b5b;
   padding: 0;
@@ -464,25 +468,5 @@ footer {
 
 .section4-0-content img {
   width: 100%;
-}
-
-.section4-0-content select {
-  width: 45%;
-  padding: 5px 0;
-  border: 0;
-  background: none;
-  color: white;
-}
-
-.section4-0-content select option {
-  color: black;
-}
-
-.section4-0-content .separation3 {
-  height: 1px;
-  width: 45%;
-  margin: 0 auto;
-  background-color: rgba(255, 255, 255, 0.4);
-  content: "";
 }
 /*# sourceMappingURL=style.css.map */
