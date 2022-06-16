@@ -358,7 +358,7 @@ footer {
   margin: 55px;
 }
 
-.accordion{
+.accordion {
   width: 50%;
 }
 
@@ -378,6 +378,29 @@ footer {
   img {
     width: 100%;
   }
-
 }
 
+.accordion {
+  .accordion-item {
+    margin: 20px 0;
+    border: 0;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.40);
+    border-radius: 0;
+    background: $colorprim;
+
+    .accordion-button {
+      background: $colorprim;
+      border-radius: 0;
+      color: white;
+      padding: 1rem 0;
+      gap: 15px;
+
+      &::after {
+        background-image: url(/assets/images/faq/icons8-chevron-bas-24.png);
+      }
+    }
+    .accordion-body {
+      background-color: white;
+    }
+  }
+}
