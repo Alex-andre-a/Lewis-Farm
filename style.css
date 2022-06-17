@@ -530,6 +530,7 @@ footer {
 
 .section5-0-formulaire {
   padding: 30px 0;
+  width: 80%;
 }
 
 .section5-0-formulaire label {
@@ -591,6 +592,10 @@ footer {
 }
 
 /* ======================= SECTION 5-1 ======================= */
+.section5-1 {
+  margin: 200px 0;
+}
+
 .section5-1 .row {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -607,5 +612,10 @@ footer {
   height: 80px;
   border-right: 2px solid #325b5b;
   content: " ";
+}
+
+/* ======================= SECTION 5-2 ======================= */
+.section5-2 img {
+  width: 100%;
 }
 /*# sourceMappingURL=style.css.map */
