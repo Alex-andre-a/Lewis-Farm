@@ -1,6 +1,7 @@
 @import "./assets/mixins/mixins";
 @import "./assets/variables/variables";
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css");
+@import "./assets/responsive/responsive";
 
 /* ======================= GLOBAL ======================= */
 
@@ -52,9 +53,9 @@ p {
   font-size: 110%;
 }
 
-/* ========================================================================================
-========================================= ACCUEIL =========================================
-=========================================================================================== */
+/* =========================================================================================== */
+/* ========================================= ACCUEIL ========================================= */
+/* =========================================================================================== */
 
 /* ======================= NAVBAR ======================= */
 
@@ -84,6 +85,7 @@ nav .row {
   display: flex;
   @include flex-center;
   @include background;
+  background-attachment: fixed;
 }
 
 .section1-0-titres {
@@ -186,10 +188,21 @@ nav .row {
   }
 
   .separation2 {
-    margin: 40px 0;
-    word-spacing: 20px;
-    font-size: 150%;
-    color: $colorprim;
+    display: flex;
+    gap: 15px;
+
+    span {
+      font-size: 180%;
+      color: $colorprim;
+
+      &:first-child {
+        opacity: 0.4;
+      }
+
+      &:nth-child(2) {
+        opacity: 0.6;
+      }
+    }
   }
 }
 
@@ -401,7 +414,8 @@ footer {
       }
     }
     .accordion-body {
-      background-color: white;
+      color: $colorprim;
+      background-color: $colorsec;
     }
   }
 }
@@ -416,13 +430,11 @@ footer {
   margin: 55px;
 
   .section5-0-content {
-    background: $colorsec;
     @include no-spaces;
     display: flex;
     flex-flow: column;
     @include flex-center;
     text-align: center;
-    gap: 25px;
   }
 
   img {
@@ -433,7 +445,7 @@ footer {
 .section5-0-formulaire {
   padding: 30px 0;
   width: 80%;
-
+  
   label {
     width: 100%;
     text-align: left;
@@ -470,7 +482,6 @@ footer {
     width: 1px;
     height: 80px;
     border-right: 2px solid $colorprim;
-    content: " ";
   }
 }
 
@@ -493,7 +504,6 @@ footer {
     width: 1px;
     height: 80px;
     border-right: 2px solid $colorprim;
-    content: " ";
   }
 }
 

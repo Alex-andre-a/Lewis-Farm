@@ -1,4 +1,205 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css");
+@media screen and (max-width: 1440px) {
+  /* ======================= GLOBAL ======================= */
+  body {
+    /* =========================================================================================== */
+    /* ========================================= ACCUEIL ========================================= */
+    /* =========================================================================================== */
+    /* ======================= NAVBAR ======================= */
+    /* ======================= SECTION 1-1 ======================= */
+    /* ======================= SECTION 1-2 ======================= */
+    /* ======================= SECTION 1-3 ======================= */
+    /* ======================= FOOTER ======================= */
+    /* ================================================================================================
+    ========================================= ABOUT TTHE FARM =========================================
+    ================================================================================================ */
+    /* ======================= SECTION 2-0 ======================= */
+    /* ======================= SECTION 2-1 ======================= */
+    /* ======================= SECTION 2-2 ======================= */
+    /* ==============================================================================================
+    ========================================= SHOP PRODUCTS =========================================
+    ============================================================================================== */
+    /* ======================= SECTION 3-0 ======================= */
+    /* ====================================================================================
+    ========================================= FAQ =========================================
+    ==================================================================================== */
+    /* ======================= SECTION 4-0 ======================= */
+    /* ==========================================================================================
+    ========================================= SAY HELLO =========================================
+    ========================================================================================== */
+    /* ======================= SECTION 5-0 ======================= */
+    /* ======================= SECTION 5-1 ======================= */
+    /* ======================= SECTION 5-2 ======================= */
+  }
+  body h1 {
+    font-size: 600%;
+  }
+  body h2 {
+    font-size: 200%;
+  }
+  body h3 {
+    font-size: 150%;
+  }
+  body h4 {
+    font-size: 140%;
+  }
+  body h5 {
+    font-size: 120%;
+  }
+  body h6 {
+    font-size: 70%;
+  }
+  body p {
+    font-size: 100%;
+  }
+  body .logo-nav {
+    text-align: left;
+  }
+  body .logo-nav img {
+    width: 50%;
+  }
+  body nav {
+    text-align: center;
+  }
+  body nav .menus-nav a {
+    font-size: 100%;
+  }
+  body .section1-1 {
+    margin: 30px 50px;
+  }
+  body .section1-1-photo {
+    height: 80vh;
+  }
+  body .section1-1-titres {
+    padding: 40px 20px;
+  }
+  body .section1-1-middle {
+    width: 80%;
+    gap: 40px;
+  }
+  body .section1-1-middle .btn {
+    padding: 10px 20px;
+  }
+  body .section1-1-middle .section1-1-logo-middle {
+    right: -30px;
+    top: -90px;
+  }
+  body .section1-1-middle .section1-1-logo-middle img {
+    width: 80%;
+  }
+  body .section1-2 {
+    margin: 30px 100px;
+  }
+  body .section1-2-content {
+    gap: 10px;
+    padding-top: 100px;
+  }
+  body .section1-2-content p {
+    width: 80%;
+  }
+  body .section1-2-content .separation2 {
+    margin: 20px 0;
+    font-size: 120%;
+  }
+  body .section1-3,
+  body footer {
+    padding: 20px;
+  }
+  body .section1-3-photos,
+  body .footer-content {
+    padding: 20px;
+    text-align: center;
+  }
+  body .section1-3-photos img,
+  body .footer-content img {
+    width: 90%;
+  }
+  body .footer-content {
+    padding: 50px 50px 0 50px;
+  }
+  body .section2-0 {
+    margin: 50px;
+  }
+  body .section2-0 .section2-0-content {
+    gap: 20px;
+  }
+  body .section2-1-content {
+    gap: 20px;
+  }
+  body .section2-1-content h2 {
+    margin-bottom: 30px;
+  }
+  body .section2-1-content a {
+    margin-top: 30px;
+  }
+  body .section2-1-content .btn {
+    padding: 10px 20px;
+  }
+  body .section2-2 {
+    margin: 50px;
+  }
+  body .section2-2 .section2-2-content {
+    gap: 10px;
+  }
+  body .section2-2 p,
+  body .section2-2 h2 {
+    margin-top: 20px;
+  }
+  body .section3-0 .row {
+    margin-bottom: 40px;
+  }
+  body .section3-0 .row .row > * {
+    padding: 0 20px;
+  }
+  body .section3-0-titre {
+    margin: 50px 0;
+  }
+  body .section4-0 {
+    margin: 50px;
+  }
+  body .accordion {
+    width: 70%;
+  }
+  body .section5-0 {
+    margin: 55px;
+  }
+  body .section5-0 img {
+    width: 100%;
+  }
+  body .section5-0-formulaire {
+    padding: 10px 0;
+    width: 80%;
+  }
+  body .section5-0-formulaire .btn {
+    padding: 10px 20px;
+  }
+  body .section5-0-formulaire .g-3 {
+    gap: 10px;
+  }
+  body .section5-0-form-titre .row {
+    gap: 5px;
+    margin: 20px 0;
+  }
+  body .section5-0-form-titre .row .section5-middle {
+    height: 60px;
+  }
+  body .section5-0-email {
+    margin: 40px 0;
+  }
+  body .section5-1 {
+    margin: 100px 0;
+  }
+  body .section5-1 .row {
+    margin: 20px 0;
+  }
+  body .section5-1 .row .section5-middle {
+    height: 60px;
+  }
+  body .section5-2 img {
+    width: 100%;
+  }
+}
+
 /* ======================= GLOBAL ======================= */
 body {
   background-color: white;
@@ -48,9 +249,9 @@ p {
   font-size: 110%;
 }
 
-/* ========================================================================================
-========================================= ACCUEIL =========================================
-=========================================================================================== */
+/* =========================================================================================== */
+/* ========================================= ACCUEIL ========================================= */
+/* =========================================================================================== */
 /* ======================= NAVBAR ======================= */
 nav .row {
   -webkit-box-align: center;
@@ -87,6 +288,7 @@ nav .row {
           align-items: center;
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
 }
 
 .section1-0-titres {
@@ -232,10 +434,23 @@ nav .row {
 }
 
 .section1-2-content .separation2 {
-  margin: 40px 0;
-  word-spacing: 20px;
-  font-size: 150%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 15px;
+}
+
+.section1-2-content .separation2 span {
+  font-size: 180%;
   color: #325b5b;
+}
+
+.section1-2-content .separation2 span:first-child {
+  opacity: 0.4;
+}
+
+.section1-2-content .separation2 span:nth-child(2) {
+  opacity: 0.6;
 }
 
 /* ======================= SECTION 1-3 ======================= */
@@ -492,7 +707,8 @@ footer {
 }
 
 .accordion .accordion-item .accordion-body {
-  background-color: white;
+  color: #325b5b;
+  background-color: #ffb84e;
 }
 
 /* ==========================================================================================
@@ -504,7 +720,6 @@ footer {
 }
 
 .section5-0 .section5-0-content {
-  background: #ffb84e;
   padding: 0;
   margin: 0;
   display: -webkit-box;
@@ -521,7 +736,6 @@ footer {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
-  gap: 25px;
 }
 
 .section5-0 img {
@@ -584,7 +798,6 @@ footer {
   width: 1px;
   height: 80px;
   border-right: 2px solid #325b5b;
-  content: " ";
 }
 
 .section5-0-email {
@@ -611,7 +824,6 @@ footer {
   width: 1px;
   height: 80px;
   border-right: 2px solid #325b5b;
-  content: " ";
 }
 
 /* ======================= SECTION 5-2 ======================= */
