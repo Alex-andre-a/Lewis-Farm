@@ -75,6 +75,10 @@ nav .row {
   }
 }
 
+.hamburger {
+  display: none;
+}
+
 /* ======================= SECTION 1-0 */
 
 .section1-0-photo {
@@ -323,11 +327,7 @@ footer {
 /* ======================= SECTION 3-0 */
 
 .section3-0 .row {
-  margin-bottom: 80px;
-
-  .row > * {
-    padding: 0 30px;
-  }
+  padding: 100px;
 }
 
 .section3-0-titre {
@@ -340,7 +340,9 @@ footer {
 }
 
 .section3-0-content {
+  margin: 0 auto;
   text-align: center;
+  width: 60%;
 
   img {
     margin-bottom: 20px;
@@ -361,6 +363,18 @@ footer {
 
 .section4-0 {
   margin: 55px;
+
+  .section4-0-content {
+    @include no-spaces;
+    display: flex;
+    flex-flow: column;
+    @include flex-center;
+    text-align: center;
+  }
+
+  img {
+    width: 100%;
+  }
 }
 
 .accordion {
@@ -368,7 +382,6 @@ footer {
 }
 
 .section4-0-content {
-  background: $colorprim;
   @include no-spaces;
   display: flex;
   flex-flow: column;
@@ -378,10 +391,6 @@ footer {
   h2,
   h4 {
     color: white;
-  }
-
-  img {
-    width: 100%;
   }
 }
 
@@ -505,6 +514,10 @@ footer {
 /* ========================================================================================================================================== */
 /* =============================================================== RESPONSIVE =============================================================== */
 /* ========================================================================================================================================== */
+
+/* =============================  */
+/* ======================= 1580px */
+/* =============================  */
 
 @media (max-width: 1580px) {
   /* ======================= GLOBAL */
@@ -682,15 +695,311 @@ footer {
   /* ======================= SECTION 3-0 */
 
   .section3-0 .row {
-    margin-bottom: 40px;
+    padding: 50px;
+  }
 
-    .row > * {
-      padding: 0 20px;
+  .section3-0-content {
+    width: 80%;
+  }
+
+  /* =============================================================== R-FAQ =============================================================== */
+
+  /* ======================= SECTION 4-0 */
+
+  .section4-0 {
+    margin: 50px;
+  }
+
+  .accordion {
+    width: 70%;
+  }
+
+  /* =============================================================== R-SAY-HELLO =============================================================== */
+
+  /* ======================= SECTION 5-0 */
+
+  .section5-0 {
+    margin: 55px;
+
+    img {
+      width: 100%;
     }
   }
 
-  .section3-0-titre {
-    margin: 50px 0;
+  .section5-0-formulaire {
+    padding: 10px 0;
+    width: 80%;
+
+    .btn {
+      padding: 10px 20px;
+    }
+
+    .g-3 {
+      gap: 10px;
+    }
+  }
+
+  .section5-0-form-titre .row {
+    gap: 5px;
+    margin: 20px 0;
+
+    .section5-middle {
+      height: 60px;
+    }
+  }
+
+  .section5-0-email {
+    margin: 40px 0;
+  }
+
+  /* ======================= SECTION 5-1 */
+
+  .section5-1 {
+    margin: 100px 0;
+  }
+
+  .section5-1 .row {
+    margin: 20px 0;
+
+    .section5-middle {
+      height: 60px;
+    }
+  }
+
+  /* ======================= SECTION 5-2 */
+
+  .section5-2 img {
+    width: 100%;
+  }
+}
+
+/* ============================  */
+/* ======================= 1130px */
+/* ============================  */
+
+@media (max-width: 1130px) {
+  /* =============================================================== R-ACCUEIL =============================================================== */
+
+  /* ======================= NAVBAR */
+
+  .menus-nav {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+
+    .btn-primary {
+      @include green-button;
+      padding: 8px 20px;
+      border: none;
+    }
+
+    .offcanvas-body {
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+
+      a {
+        text-decoration: none;
+
+        &:hover {
+          color: black;
+        }
+      }
+    }
+  }
+}
+
+/* ============================  */
+/* ======================= 768px */
+/* ============================  */
+
+@media (max-width: 768px) {
+  /* ======================= GLOBAL */
+
+  h1 {
+    font-size: 600%;
+  }
+
+  h2 {
+    font-size: 200%;
+  }
+
+  h3 {
+    font-size: 150%;
+  }
+
+  h4 {
+    font-size: 140%;
+  }
+
+  h5 {
+    font-size: 120%;
+  }
+
+  h6 {
+    font-size: 70%;
+  }
+
+  p {
+    font-size: 100%;
+  }
+
+  /* =============================================================== R-ACCUEIL =============================================================== */
+
+  /* ======================= NAVBAR */
+
+  .logo-nav {
+    text-align: left;
+
+    img {
+      width: 50%;
+    }
+  }
+
+  nav {
+    text-align: center;
+
+    .menus-nav a {
+      font-size: 100%;
+    }
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  /* ======================= SECTION 1-1 */
+
+  .section1-1 {
+    margin: 30px 50px;
+  }
+
+  .section1-1-photo {
+    height: 80vh;
+  }
+
+  .section1-1-titres {
+    padding: 40px 20px;
+  }
+
+  .section1-1-middle {
+    width: 80%;
+    gap: 40px;
+
+    .btn {
+      padding: 10px 20px;
+    }
+
+    .section1-1-logo-middle {
+      right: -30px;
+      top: -90px;
+
+      img {
+        width: 80%;
+      }
+    }
+  }
+
+  /* ======================= SECTION 1-2 */
+
+  .section1-2 {
+    margin: 30px 100px;
+  }
+
+  .section1-2-content {
+    gap: 10px;
+    padding-top: 100px;
+
+    p {
+      width: 80%;
+    }
+
+    .separation2 {
+      margin: 20px 0;
+      font-size: 120%;
+    }
+  }
+
+  /* ======================= SECTION 1-3 */
+
+  .section1-3,
+  footer {
+    padding: 20px;
+  }
+
+  .section1-3-photos,
+  .footer-content {
+    padding: 20px;
+    text-align: center;
+
+    img {
+      width: 90%;
+    }
+  }
+
+  /* ======================= FOOTER */
+
+  .footer-content {
+    padding: 50px 50px 0 50px;
+  }
+
+  /* =============================================================== R-ABOUT-THE-FARM =============================================================== */
+
+  /* ======================= SECTION 2-0 */
+
+  .section2-0 {
+    margin: 50px;
+
+    .section2-0-content {
+      gap: 20px;
+    }
+  }
+
+  /* ======================= SECTION 2-1 */
+
+  .section2-1-content {
+    gap: 20px;
+
+    h2 {
+      margin-bottom: 30px;
+    }
+
+    a {
+      margin-top: 30px;
+    }
+
+    .btn {
+      padding: 10px 20px;
+    }
+  }
+
+  /* ======================= SECTION 2-2 */
+
+  .section2-2 {
+    margin: 50px;
+
+    .section2-2-content {
+      gap: 10px;
+    }
+
+    p,
+    h2 {
+      margin-top: 20px;
+    }
+  }
+
+  /* =============================================================== R-SHOP-PRODUCTS =============================================================== */
+
+  /* ======================= SECTION 3-0 */
+
+  .section3-0 .row {
+    padding: 50px;
+  }
+
+  .section3-0-content {
+    width: 80%;
   }
 
   /* =============================================================== R-FAQ =============================================================== */
